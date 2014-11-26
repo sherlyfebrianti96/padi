@@ -310,7 +310,12 @@
                             <div class="gallery-video">
                                 <h1><small>Gallery Video</small></h1>
                                 <div class="col-md-8 col-md-offset-2 col-sm-12 hidden-xs">
-                                    <p style="text-align:center"><video controls src="video/epic.ogv"></video></p>
+                                    <p style="text-align:center">
+                                        <video controls>
+                                            <source type="video/mp4" src="video/epic.mp4">
+                                            <source type="video/mp4" src="video/epic.ogv">
+                                        </video>
+                                    </p>
                                 </div>
                                 <div class="bg-success visible-xs text-center"><i>Gallery Video hanya dapat dilihat pada ukuran browser yang lebih besar, seperti PC atau tablet.</i></div>
                             </div>
@@ -331,6 +336,7 @@
                     <h4 class="text-center">
                         Copyright &copy; 2014 - <a href="">ASRYL</a>
                     </h4>
+                    <p class="text-center">Masih bs berjalan di Mozilla, di chrome masih bermasalah dengan file extension video nya</p>
                 </div>
             </footer>
         </div>
