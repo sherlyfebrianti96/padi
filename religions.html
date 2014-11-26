@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>PADI - Portal Agama di Indonesia</title>
+        <link rel="shortcut icon" href="img/logo.png">
         <link rel="stylesheet" type="text/css" href="css/jquery-ui-1.10.4.custom.min.css">
         <link rel="stylesheet" type="text/css" href="css/bootstrapValidator.css">
         <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
@@ -10,22 +11,48 @@
     <body class="bg-success">
         <div class="content">
             <style type="text/css">
+                .content-container {
+                    margin-top: 50px;
+                }
+                .pilih-agama {
+                    margin-bottom: 30px;
+                }
                 .tabs {
                     width: 90%;
                     margin: 0 auto;
-                    margin-top: 50px;
                 }
                 #tabs {
                     min-height: 400px;
                 }
                 #tabs-1 hr {
                     height: 1px;
-                    width: 50%;
+                    width: 80%;
                     margin: 0;
                     background: #ccc;
                 }
                 #tabs-1 p {
                     text-indent: 35px;
+                }
+                #tabs-2 table {
+                    overflow: scroll;
+                }
+                #tabs-2 table a {
+                    color: #5bc0de;
+                }
+                #tabs-2 table a:hover {
+                    color: #31708f;
+                }
+                .gellery-foto {
+                    margin-bottom: 70px;
+                }
+                .gellery-foto h1, .gallery-video h1 {
+                    margin-bottom: 20px;
+                }
+                .keterangan {
+                    margin-top: 30px;
+                }
+                .keterangan p {
+                    margin: 25px 0;
                 }
                 #accordion div {
                     min-height: 350px;
@@ -54,6 +81,16 @@
                 <div class="clear"></div>
             </header>
             <div class="content-container">
+                <div class="pilih-agama col-md-4 col col-sm-10 col-xs-10 col-md-offset-7 col-sm-offset-1 col-xs-offset-1">
+                    <select class="form-control">
+                        <option>Buddha</option>
+                        <option>Hindu</option>
+                        <option selected>Islam</option>
+                        <option>Kong Hu Cu</option>
+                        <option>Kristen</option>
+                    </select>
+                </div>
+                <div class="clear"></div>
                 <div class="tabs">
                     <div id="tabs">
                         <ul>
@@ -74,39 +111,19 @@
                                     <hr/>
                                     <div class="col-xs-12">
                                         <form class="form-horizontal" role="form">
-                                            <div class="col-md-6 col-sm-12 col-xs-12">
+                                            <div class="col-md-9 col-sm-12 col-xs-12">
                                                 <div class="form-group">
                                                     <label class="col-sm-2 hidden-sm hidden-xs">
                                                         <img src="img/people-icon.png">
+                                                        <br/>
+                                                        <span>Login User</span>
                                                     </label>
                                                     <div class="col-sm-10 col-xs-12">
                                                         <textarea class="give-comment-textarea form-control"></textarea>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="col-md-6 col-sm-12 col-xs-12 comment-author text-info">
-                                                <div class="col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
-                                                    <div class="form-group">
-                                                        <label class="col-sm-2 col-xs-12">Nama</label>
-                                                        <div class="col-sm-10 col-xs-12">
-                                                            <input type="text" class="form-control">
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label class="col-sm-2 col-xs-12">Email</label>
-                                                        <div class="col-sm-10 col-xs-12">
-                                                            <input type="email" class="form-control">
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label class="col-sm-2 col-xs-12">Website</label>
-                                                        <div class="col-sm-10 col-xs-12">
-                                                            <input type="text" class="form-control">
-                                                        </div>
-                                                    </div>
-                                                    <div class="text-center">
-                                                        <button type="submit" class="btn btn-success">Post Comment</button>
-                                                    </div>
+                                                <div class="text-right">
+                                                    <button type="submit" class="btn btn-success">Post Comment</button>
                                                 </div>
                                             </div>
                                         </form>
@@ -166,7 +183,7 @@
                         </div>
                         <div id="tabs-2">
                             <h2><small>Regular Ceremony Schedule</small></h2>
-                            <table class="table table-bordered">
+                            <table class="table table-bordered table-hover">
                                 <thead>
                                     <tr>
                                         <th>Prayers</th>
@@ -269,8 +286,41 @@
                             </div>
                         </div>
                         <div id="tabs-4">
-                            <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
-                            <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
+                            <div class="gellery-foto">
+                                <h1><small>Gallery Foto</small></h1>
+                                <div class="col-md-8 col-md-offset-2 col-sm-12 hidden-xs">
+                                    <div id="slider1_container" style="position: relative; top: 0px; left: 0px; width: 600px; height: 300px;">
+                                        <!-- Slides Container -->
+                                        <div u="slides" style="cursor: move; position: absolute; overflow: hidden; left: 0px; top: 0px; width: 600px; height: 300px;">
+                                            <div><img u="image" src="img/1. Home.png" /></div>
+                                            <div><img u="image" src="img/ddd5769b0b0307e78eeb047b4414a682-slide-mikroskil.jpeg" /></div>
+                                            <div><img u="image" src="img/05581b8afa66aab403fb119e9098756b-slide-mikroskil.png" /></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-success visible-xs text-center"><i>Gallery Foto hanya dapat dilihat pada ukuran browser yang lebih besar, seperti PC atau tablet.</i></div>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="keterangan col-md-10 col-sm-12 col-xs-12 col-md-offset-1 text-center">
+                                <span class="text-danger">Keterangannya opsional, kalo gak pake kosongin aja.</span>
+                                <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+                                <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="gallery-video">
+                                <h1><small>Gallery Video</small></h1>
+                                <div class="col-md-8 col-md-offset-2 col-sm-12 hidden-xs">
+                                    <p style="text-align:center"><video controls src="video/epic.ogv"></video></p>
+                                </div>
+                                <div class="bg-success visible-xs text-center"><i>Gallery Video hanya dapat dilihat pada ukuran browser yang lebih besar, seperti PC atau tablet.</i></div>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="keterangan col-md-10 col-sm-12 col-xs-12 col-md-offset-1 text-center">
+                                <span class="text-danger">Keterangannya opsional, kalo gak pake kosongin aja.</span>
+                                <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+                                <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
+                            </div>
+                            <div class="clear"></div>
                         </div>
                     </div>
                 </div>
@@ -288,10 +338,15 @@
         <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
         <script type="text/javascript" src="js/jquery-ui-1.10.4.custom.min.js"></script>
         <script type="text/javascript" src="js/bootstrapValidator.js"></script>
+        <script src="js/jssor.slider.mini.js"></script>
         <script type="text/javascript">
         $(function() {
             $( "#tabs" ).tabs();
             $( "#accordion" ).accordion();
+        });
+        jQuery(document).ready(function ($) {
+            var options = { $AutoPlay: true };
+            var jssor_slider1 = new $JssorSlider$('slider1_container', options);
         });
         </script>
     </body>
